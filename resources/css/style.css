@@ -1,0 +1,265 @@
+:root{
+    --main: #eeeeee;
+    --sec: #A86703;
+    --acc: #414141;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--main);
+    animation-name: Primary;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.header{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(/public/media/factory1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header-chi-siamo{
+    background: linear-gradient(rgba(0, 0, 0, 0.506), transparent), url(/public/media/chisiamo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+h1{
+    letter-spacing: 4px;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+h4{
+    font-weight: 300;
+}
+
+/* Navbar */
+.navScroll{
+    transition: 0.3s;
+    background-color: var(--acc);
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.btn-modal{
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+}
+
+
+
+/* darkmode switch */
+.theme-toggle {
+    width: 60px;
+    height: 30px;
+    background-color: var(--sec);
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+  
+.toggle-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+  
+.dark-mode .theme-toggle {
+    background-color: var(--acc);
+}
+  
+.dark-mode .toggle-icon {
+    color: var(--main) !important;
+}
+
+.darkMode{
+    transition: 0.5s;
+    background: var(--acc) !important;
+    color: var(--main) !important;
+}
+
+.navDark {
+    background-color: var(--sec);
+    transition: 0.3s;
+}
+
+/* LOGIN  */
+
+.form-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+}
+  
+.submit {
+    background-color: var(--acc);
+    color: var(--main);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+.submit:hover {
+    background-color: var(--sec);
+    color: var(--main);
+}
+  
+.signup-link {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+  
+.signup-link a {
+    text-decoration: underline;
+}
+
+/* section1  */
+.h-img-custom {
+    height: 80vh;
+}
+
+/* section2 */
+.text-number{
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.5s;
+
+}
+
+.text-number:hover{
+    color: var(--sec);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+ 
+}
+
+
+/* footer  */
+.footer{
+    background-color: var(--acc);
+}
+
+.footerDarkMode{
+    background-color: var(--sec);
+}
+
+/* annunci */
+
+  /* swiper slide */
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/* form chi siamo  */
+.card_custom {
+    width: 300px;
+    padding: 0 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    background: #fff;
+    border-radius: 20px;
+  }
+  
+  .card_custom > * {
+    margin: 0;
+  }
+  
+  .card__title {
+    font-size: 23px;
+    font-weight: 900;
+    color: #333;
+  }
+  
+  .card__content {
+    font-size: 13px;
+    line-height: 18px;
+    color: #333;
+  }
+  
+  .card__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .card__form input {
+    margin-top: 10px;
+    outline: 0;
+    background: rgb(255, 255, 255);
+    box-shadow: transparent 0px 0px 0px 1px inset;
+    padding: 0.6em;
+    border-radius: 14px;
+    border: 1px solid #333;
+    color: black;
+  }
+  
+  .card__form button {
+    border: 0;
+    background: #111;
+    color: #fff;
+    padding: 0.68em;
+    border-radius: 14px;
+    font-weight: bold;
+  }
+  
+  .sign-up:hover {
+    opacity: 0.8;
+  } 
+  
+
+/* animazione */
+@keyframes Primary {
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    h4{
+        font-size: 1rem;
+    }
+}
